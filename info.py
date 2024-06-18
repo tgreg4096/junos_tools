@@ -14,7 +14,7 @@ try:
         dev.open()
 
 except ConnectError as err:
-        print ("Cannot connect to device: {0}".format(err))
+        print (f"Cannot connect to device: {err}")
         sys.exit(1)
 except Exception as err:
         print (err)
