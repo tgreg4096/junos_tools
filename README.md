@@ -17,3 +17,4 @@ drops.py - retreives the counter stats for tx_packets + tx_err_drops on all inte
 I'd like to add more functionality to bgp.py, to also display the number of advertised and received routes, and also allow to specify a specific peer - could be useful in edge peering scenarios where there are hundreds of peers. 
 
 For drops.py, I'd like to possibly call a file full of devices - and run this against a large number of devices, essentially looking for egress drops - I would also possibly call some of the other statistics, which would aid in finding congestion, eg; discards or overruns. 
+
