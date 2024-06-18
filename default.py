@@ -15,12 +15,12 @@ tbl.get()
 
 print ('Resolved egress interface for default')
 
-gw = RouteTable(dev)
-gw.get('0.0.0.0')
-print (gw)
-for item in gw:
-    print ('protocol:', item.protocol)
-    print ('age:', item.age)
-    print ('via:', item.via)
+default = RouteTable(dev)
+default.get('0.0.0.0')
+print (f" {default}")
+for item in default:
+    print (f" IGP protocol:\t\t\t {item.protocol}")
+    print (f" Route age:\t\t\t {item.age}")
+    print (f" Selected best-path interface:\t {item.via}")
 
 dev.close()
