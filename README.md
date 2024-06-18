@@ -5,8 +5,11 @@ A few small op scripts to automate some basic tasks, using pyez for Junos.
 ## Getting Started
 
 info.py - returns a list of device facts, device software version, RE states, and basic device information
+
 bgp.py - returns a list of BGP peers, provides peer state, peer-AS number and the number of messages sent and received, along with the elapsed time of the session
+
 default.py - provides the resolved next-hop interface for an OSPF default route, along with it's age.
+
 drops.py - retreives the counter stats for tx_packets + tx_err_drops on all interfaces from a Juniper router
 
 ## Future
